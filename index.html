@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Table-plugin</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/style.js"></script>
+	</head>
+	
+	<body>
+		<table class="table-simple">
+			<caption>Tabella 1: i personaggi della Compagnia dell'Anello</caption>
+			<colgroup>
+				<col id="one" />
+				<col id="two" />
+				<col id="three" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">Nome</th>
+					<th scope="col">Razza</th>
+					<th scope="col">Luogo</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<th>Nome</th>
+					<th>Razza</th>
+					<th>Luogo</th>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td>Gandalf</td>
+					<td>Stregone</td>
+					<td>Valinor</td>
+				</tr>
+				<tr>
+					<td>Frodo Baggins</td>
+					<td>Hobbit</td>
+					<td>Contea</td>
+				</tr>
+				<tr>
+					<td>Samvise Gamgee (Sam)</td>
+					<td>Hobbit</td>
+					<td>Contea</td>
+				</tr>
+				<tr>
+					<td>Peregrino Tuc</td>
+					<td>Hobbit</td>
+					<td>Contea</td>
+				</tr>
+				<tr>
+					<td>Meriadoc Brandibuck</td>
+					<td>Hobbit</td>
+					<td>Contea</td>
+				</tr>
+				<tr>
+					<td>Aragon</td>
+					<td>Uomo</td>
+					<td>Gondor</td>
+				</tr>
+				<tr>
+					<td>Legolas</td>
+					<td>Elfo</td>
+					<td>Gran Burrone</td>
+				</tr>
+				<tr>
+					<td>Boromir</td>
+					<td>Uomo</td>
+					<td>Gondor</td>
+				</tr>
+				<tr>
+					<td>Gimli</td>
+					<td>Nano</td>
+					<td>Erebor</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<table class="table-hover">
+			<caption>Tabella 2: Tabelline</caption>
+			<colgroup>
+				<col id="empty" />
+				<col id="one" />
+				<col id="two" />
+				<col id="three" />
+				<col id="four" />
+				<col id="five" />
+				<col id="six" />
+				<col id="seven" />
+				<col id="eight" />
+				<col id="nine" />
+				<col id="ten" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col"></th>
+					<th scope="col">One</th>
+					<th scope="col">Two</th>
+					<th scope="col">Three</th>
+					<th scope="col">Four</th>
+					<th scope="col">Five</th>
+					<th scope="col">Six</th>
+					<th scope="col">Seven</th>
+					<th scope="col">Eight</th>
+					<th scope="col">Nine</th>
+					<th scope="col">Ten</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr id="one">
+					<th scope="row">One</th>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+					<td>7</td>
+					<td>8</td>
+					<td>9</td>
+					<td>10</td>
+				</tr>
+				<tr id="two">
+					<th scope="row">Two</th>
+					<td>2</td>
+					<td>4</td>
+					<td>6</td>
+					<td>8</td>
+					<td>10</td>
+					<td>12</td>
+					<td>14</td>
+					<td>16</td>
+					<td>18</td>
+					<td>20</td>
+				</tr>
+				<tr id="three">
+					<th scope="row">Three</th>
+					<td>3</td>
+					<td>6</td>
+					<td>9</td>
+					<td>12</td>
+					<td>15</td>
+					<td>18</td>
+					<td>21</td>
+					<td>24</td>
+					<td>27</td>
+					<td>30</td>
+				</tr>
+				<tr id="four">
+					<th scope="row">Four</th>
+					<td>4</td>
+					<td>8</td>
+					<td>12</td>
+					<td>16</td>
+					<td>20</td>
+					<td>24</td>
+					<td>28</td>
+					<td>32</td>
+					<td>36</td>
+					<td>40</td>
+				</tr>
+				<tr id="five">
+					<th scope="row">Five</th>
+					<td>5</td>
+					<td>10</td>
+					<td>15</td>
+					<td>20</td>
+					<td>25</td>
+					<td>30</td>
+					<td>35</td>
+					<td>40</td>
+					<td>45</td>
+					<td>50</td>
+				</tr>
+				<tr id="six">
+					<th scope="row">Six</th>
+					<td>6</td>
+					<td>12</td>
+					<td>18</td>
+					<td>24</td>
+					<td>30</td>
+					<td>36</td>
+					<td>42</td>
+					<td>48</td>
+					<td>54</td>
+					<td>60</td>
+				</tr>
+				<tr id="seven">
+					<th scope="row">Seven</th>
+					<td>7</td>
+					<td>14</td>
+					<td>21</td>
+					<td>28</td>
+					<td>35</td>
+					<td>42</td>
+					<td>49</td>
+					<td>56</td>
+					<td>63</td>
+					<td>70</td>
+				</tr>
+				<tr id="eight">
+					<th scope="row">Eight</th>
+					<td>8</td>
+					<td>16</td>
+					<td>24</td>
+					<td>32</td>
+					<td>40</td>
+					<td>48</td>
+					<td>56</td>
+					<td>64</td>
+					<td>72</td>
+					<td>80</td>
+				</tr>
+				<tr id="nine">
+					<th scope="row">Nine</th>
+					<td>9</td>
+					<td>18</td>
+					<td>27</td>
+					<td>36</td>
+					<td>45</td>
+					<td>54</td>
+					<td>63</td>
+					<td>72</td>
+					<td>81</td>
+					<td>90</td>
+				</tr>
+				<tr id="ten">
+					<th scope="row">Ten</th>
+					<td>10</td>
+					<td>20</td>
+					<td>30</td>
+					<td>40</td>
+					<td>50</td>
+					<td>60</td>
+					<td>70</td>
+					<td>80</td>
+					<td>90</td>
+					<td>100</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<table class="table-disappearance">
+			<caption>Tabella 3: HTML5 form elements support</caption>
+			<colgroup>
+				<col id="empty" />
+				<col id="firefox" />
+				<col id="chrome" />
+				<col id="safari" />
+				<col id="opera" />
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col"></th>
+					<th scope="col">Firefox</th>
+					<th scope="col">Chrome</th>
+					<th scope="col">Safari</th>
+					<th scope="col">Opera</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<th>Score</th>
+					<th>99/108</th>
+					<th>74/108</th>
+					<th>65/108</th>
+					<th>99/108</th>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<th scope="row">input type=text</th>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/alert.png" title="Partial" alt="Partial" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+				</tr>
+				<tr>
+					<th scope="row">input type=search</th>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+				</tr>
+				<tr>
+					<th scope="row">input type=tel</th>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+				</tr>
+				<tr>
+					<th scope="row">input type=url</th>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+				</tr>
+				<tr>
+					<th scope="row">input type=email</th>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+				</tr>
+				<tr>
+					<th scope="row">input type=datetime</th>
+					<td><img src="imgs/error.png" title="Unsupported" alt="Unsupported" width="16" height="16" /></td>
+					<td><img src="imgs/error.png" title="Unsupported" alt="Unsupported" width="16" height="16" /></td>
+					<td><img src="imgs/alert.png" title="Partial" alt="Partial" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+				</tr>
+				<tr>
+					<th scope="row">input type=date</th>
+					<td><img src="imgs/error.png" title="Unsupported" alt="Unsupported" width="16" height="16" /></td>
+					<td><img src="imgs/error.png" title="Unsupported" alt="Unsupported" width="16" height="16" /></td>
+					<td><img src="imgs/alert.png" title="Partial" alt="Partial" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+				</tr>
+				<tr>
+					<th scope="row">input type=month</th>
+					<td><img src="imgs/error.png" title="Unsupported" alt="Unsupported" width="16" height="16" /></td>
+					<td><img src="imgs/error.png" title="Unsupported" alt="Unsupported" width="16" height="16" /></td>
+					<td><img src="imgs/alert.png" title="Partial" alt="Partial" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+				</tr>
+				<tr>
+					<th scope="row">input type=week</th>
+					<td><img src="imgs/error.png" title="Unsupported" alt="Unsupported" width="16" height="16" /></td>
+					<td><img src="imgs/error.png" title="Unsupported" alt="Unsupported" width="16" height="16" /></td>
+					<td><img src="imgs/alert.png" title="Partial" alt="Partial" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+				</tr>
+				<tr>
+					<th scope="row">textarea</th>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/alert.png" title="Partial" alt="Partial" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+				</tr>
+				<tr>
+					<th scope="row">select</th>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+				</tr>
+				<tr>
+					<th scope="row">fieldset</th>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/alert.png" title="Partial" alt="Partial" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+				</tr>
+				<tr>
+					<th scope="row">datalist</th>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/alert.png" title="Partial" alt="Partial" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+				</tr>
+				<tr>
+					<th scope="row">keygen</th>
+					<td><img src="imgs/error.png" title="Unsupported" alt="Unsupported" width="16" height="16" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+				</tr>
+				<tr>
+					<th scope="row">output</th>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+				</tr>
+				<tr>
+					<th scope="row">progress</th>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/error.png" title="Unsupported" alt="Unsupported" width="16" height="16" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+				</tr>
+				<tr>
+					<th scope="row">meter</th>
+					<td><img src="imgs/error.png" title="Unsupported" alt="Unsupported" width="16" height="16" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+					<td><img src="imgs/error.png" title="Unsupported" alt="Unsupported" width="16" height="16" /></td>
+					<td><img src="imgs/accept.png" title="Supported" alt="Supported" /></td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

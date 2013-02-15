@@ -1,0 +1,227 @@
+/*
+ * table-simple class definitions
+ */
+
+.table-simple {
+	width: 600px;
+	margin: 8px 4px;
+	border-collapse: collapse; /* delete border between cells */
+	font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;
+}
+
+.table-simple caption {
+	caption-side: bottom;
+	text-align: right;
+	font-size: .9em;
+	padding-top: 6px;
+}
+
+.table-simple col#one {
+	width: 50%;
+	background-color: transparent;
+}
+
+.table-simple col#two, .table-simple col#three {
+	width: 25%;
+	background-color: transparent;
+}
+
+.table-simple th, .table-simple td {
+	padding: 10px 5px 3px 5px; /* distance between cells content and their border */
+	text-align: left;
+	border: 1px solid #DDB575;
+	empty-cells: show;
+}
+
+.table-simple thead th, .table-simple tfoot th {
+	color: #FFF; /* text color */
+	background-color: #CE420C;
+	
+	/* gradients for each browser */
+	background-image: -moz-linear-gradient(top, #E54C10, #AD3608);
+	background-image: -webkit-linear-gradient(top, #E54C10, #AD3608);
+	background-image: -ms-linear-gradient(top, #E54C10, #AD3608);
+	background-image: -o-linear-gradient(top, #E54C10, #AD3608);
+	background-image: linear-gradient(top, #E54C10, #AD3608);
+	
+	vertical-align: middle;
+	text-transform: uppercase;
+	padding-top: 8px;
+	box-shadow: inset 1px 1px 0 0 #FFF;
+}
+
+/* even rows */
+.table-simple tbody tr:nth-child(even) { 
+ 	background-color: rgb(252, 252, 203);
+ }
+ 
+ /* odd rows */
+.table-simple tbody tr:nth-child(odd) { 
+ 	background-color: transparent;
+ }
+ 
+.table-simple tbody tr:hover {
+ 	background-color: rgb(255, 226, 181);
+ 	cursor: pointer;
+ }
+ 
+/*
+ * table-hover class definitions
+ */
+  
+.table-hover {
+	margin: 8px 4px;
+	width: 800px;
+	border-collapse: collapse;
+	font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;
+}
+
+.table-hover caption {
+	caption-side: top;
+	text-align: center;
+	font-size: .9em;
+	padding: 6px 0 4px 0;
+}
+
+.table-hover col {
+	width: 9%;
+}
+
+.table-hover th {
+	text-transform: uppercase;
+}
+
+.table-hover tbody th {
+	text-align: right;
+}
+
+.table-hover td, .table-hover th {
+	padding: 8px 4px 4px 4px;
+	vertical-align: middle;
+	text-align: center;
+	border: 1px solid #DDB575;
+}
+
+.hover {
+	background-color: rgb(255, 226, 181);
+}
+
+/*
+ * table-disappearance class definitions
+ */
+ 
+.table-disappearance {
+	width: 640px;
+	border-collapse: collapse;
+	empty-cells: show;
+	margin: 0 auto; /* for center table to the document */
+	padding: 20px;
+	font-family: Helvetica, "Trebuchet MS", Arial, sans-serif;
+}
+
+.table-disappearance col {
+	width: 15%;
+	background-color: transparent;
+}
+
+.table-disappearance col#empty {
+	width: 40%;
+}
+
+.table-disappearance tbody th, .table-disappearance tbody td {
+	line-height: 42px;
+	vertical-align: middle;
+	padding: 0 12px;
+	border: 1px solid #160E54;
+	box-shadow: 1px 1px 0 #FFF;
+}
+
+.table-disappearance thead th {
+	height: 96px;
+	border: 0;
+	vertical-align: bottom;
+	padding-bottom: 8px;
+}
+
+.table-disappearance tfoot th {
+	line-height: 42px;
+	vertical-align: middle;
+	padding: 0 12px;
+	border: 1px solid #160E54;
+}
+
+/* second th of thead tag */
+.table-disappearance thead th:nth-child(2) {
+	background: url(../imgs/firefox64.png) top center no-repeat;
+}
+
+.table-disappearance thead th:nth-child(3) {
+	background: url(../imgs/chrome64.png) top center no-repeat;
+}
+
+.table-disappearance thead th:nth-child(4) {
+	background: url(../imgs/safari64.png) top center no-repeat;
+}
+
+.table-disappearance thead th:nth-child(5) {
+	background: url(../imgs/opera64.png) top center no-repeat;
+}
+
+.table-disappearance tbody th {
+	text-align: left;
+}
+
+.table-disappearance tbody td {
+	text-align: center;
+}
+
+/* first th of tfoot tag */
+.table-disappearance tfoot th:nth-child(1) {
+	text-align: right;
+	border: 0;
+}
+
+.table-disappearance tbody tr:nth-child(odd) {
+	background-color: rgb(219, 194, 200);
+}
+
+.table-disappearance tbody tr:nth-child(even) {
+	background-color: #FFF;
+}
+
+.table-disappearance tbody tr:hover {
+	background-color: rgb(190, 187, 212);
+}
+
+.table-disappearance tbody tr.group {
+	background-color: rgb(190, 187, 212);
+}
+
+.table-disappearance tbody tr.group th {
+	background: url(../imgs/zoomin.png) 98% center no-repeat;
+	cursor: pointer;
+}
+
+.table-disappearance tbody tr.group.open th {
+	background: url(../imgs/zoomout.png) 98% center no-repeat;
+}
+
+.table-disappearance tfoot th:not(:nth-child(1)) {
+	background-color: rgb(190, 187, 212);
+}
+
+.table-disappearance caption {
+	caption-side: bottom;
+	text-align: right;
+	font-size: .9em;
+	padding: 6px;
+}
+
+.table-disappearance small {
+	font-size: 0.8em;
+}
+
+.table-disappearance tbody img {
+	border: 0;
+	vertical-align: middle;
+}
