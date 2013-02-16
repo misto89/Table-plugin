@@ -3,7 +3,7 @@ $('document').ready(function() {
 	//For .table-hover class--------------------------------------------------------------------------------
 	
 	/*
-	 * on function (or delegate function in the previous jquery version) allows to dynamically 
+	 * on function (or delegate function in the previous jquery versions) allows to dynamically 
 	 * assign event handler to the present and future nodes.
 	 */
 	$('.table-hover').on('hover', 'td', function(event) {
